@@ -10,7 +10,7 @@ Simply call the java compiler:
     javac Counter.java
 
 
-Using
+Usage
 -----
 
 Drag the compiled file into a directory and execute it.
@@ -28,3 +28,12 @@ When using the precompiled JAR at https://github.com/gumbini/count-lines/release
   
     java -jar CountLines.jar "./subdirectory"
     ...
+
+Sample Output
+-------------
+
+    $ java -jar CountLines.jar "./src/"
+    Counter.java: 51 lines
+    MANIFEST.MF: 3 lines
+    
+    All files (2): 54 lines
