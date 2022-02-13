@@ -1,39 +1,34 @@
 # Count Lines
-A simple Java program that can count the lines / rows of code in a file or directory.
 
+A ***very*** simple Java program that can count the rows / lines of code in a file or directory including subdirectories.
 
-Building
---------
+## Build
 
-Simply call the java compiler:
+Call the Java compiler manually. It's just one file...
 
-    javac Counter.java
+```
+javac Counter.java
+```
 
+## Usage
 
-Usage
------
+Drag the [compiled file](https://github.com/Gumbini/count-lines/releases) into a directory and execute it.
 
-Drag the compiled file into a directory and execute it.
+```
+java Counter "./subdirectory"
+java Counter "./HelloWorld.java"
+java Counter "."
+...
+```
 
-    java Counter "./subdirectory"
-    java Counter "./HelloWorld.java"
-    java Counter "."
-    ...
+**Please note that when specifying "." as the path argument that the program counts itself!**
 
+## Sample Output
 
-**Please keep in mind that when you specify "." as the argument that the program counts itself!**
+```
+$ java Counter "./src/"
+Counter.java: 51 lines
+MANIFEST.MF: 3 lines
 
-
-When using the precompiled JAR at https://github.com/gumbini/count-lines/releases:
-  
-    java -jar CountLines.jar "./subdirectory"
-    ...
-
-Sample Output
--------------
-
-    $ java -jar CountLines.jar "./src/"
-    Counter.java: 51 lines
-    MANIFEST.MF: 3 lines
-    
-    All files (2): 54 lines
+All files (2): 54 lines
+```
